@@ -1,9 +1,7 @@
 # Stable Diffusion with Nix
 
-[![NixOS
-Unstable](https://img.shields.io/badge/NixOS-unstable-blue.svg?style=flat-square&logo=NixOS&logoColor=white)](https://nixos.org)
-
 Quickly get up and running using Stable Diffusion with Nix flakes.
+Cloned from [collinarnett/stable-diffusion-nix](https://github.com/collinarnett/stable-diffusion-nix).
 
 ## Requirements
 
@@ -18,13 +16,10 @@ Quickly get up and running using Stable Diffusion with Nix flakes.
 experimental-features = nix-command flakes
 ```
 
-2. Use `nix run --impure github:collinarnett/stable-diffusion-nix#jupyterLab` to spawn a Jupyter Lab instance. The `--impure` flag allows nixGL to find your Nvidia drivers on non-nixos systems.
+2. Use `nix run --impure` to spawn a Jupyter Lab instance. The `--impure` flag allows nixGL to find your Nvidia drivers on non-nixos systems.
 
-3. Replace `YOUR_TOKEN_HERE` with your HuggingFace token and make sure to accept the [License Agreement](https://huggingface.co/CompVis/stable-diffusion-v1-4) for Stable Diffusion.
+3. Update `stable-diff.cfg` with HuggingFace token and make sure to accept the [License Agreement](https://huggingface.co/CompVis/stable-diffusion-v1-4) for Stable Diffusion.
 
-4. Execute the cells in `stable-diff.ipynb` to generate images.
+4. Update `stable-diff.cfg` with output directory
 
-Enjoy!
-
-
-![image](https://i.imgur.com/AKNxYNb.png)
+5. Execute the cells in `stable-diff.ipynb` to generate images.
